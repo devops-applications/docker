@@ -12,6 +12,10 @@
 	"labels": [],
 	"live-restore": true,
 	"log-driver": "json-file",
+        "log-opts": {
+            "max-size": "100m",
+            "max-file": "3"
+        },
 	"log-opts": {},
 	"pidfile": "/var/run/docker/docker.pid",
 	"cluster-store": "",
@@ -25,7 +29,7 @@
 	"hosts": ["tcp://127.0.0.1:2376","unix:///var/run/docker.sock"],
 	"log-level": "INFO",
 	"swarm-default-advertise-addr": "",
-	"api-cors-header": "",
+  	"api-cors-header": "",
 	"selinux-enabled": false,
 	"userns-remap": "",
 	"group": "",
