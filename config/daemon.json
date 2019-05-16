@@ -1,0 +1,59 @@
+{
+	"authorization-plugins": [],
+	"dns": ["223.5.5.5","223.4.4.4"],
+	"dns-opts": [],
+	"dns-search": [],
+	"exec-opts": [],
+	"exec-root": "/data/apps/docker/sockets",
+        "data-root": "/data/apps/docker",
+	"experimental": false,
+	"storage-driver": "overlay2",
+        "storage-opts": ["overlay2.override_kernel_check=true"  ],
+	"labels": [],
+	"live-restore": true,
+	"log-driver": "json-file",
+	"log-opts": {},
+	"pidfile": "/var/run/docker/docker.pid",
+	"cluster-store": "",
+	"cluster-store-opts": {},
+	"cluster-advertise": "",
+	"max-concurrent-downloads": 30,
+	"max-concurrent-uploads": 5,
+	"shutdown-timeout": 15,
+	"debug": true,
+	"default-ulimit": ["65535:65535"],
+	"hosts": ["tcp://127.0.0.1:2376","unix:///var/run/docker.sock"],
+	"log-level": "INFO",
+	"swarm-default-advertise-addr": "",
+	"api-cors-header": "",
+	"selinux-enabled": false,
+	"userns-remap": "",
+	"group": "",
+	"cgroup-parent": "",
+	"init": false,
+	"init-path": "/usr/libexec/docker-init",
+	"ipv6": false,
+	"iptables": true,
+        "ip-forward": true,
+	"userland-proxy": false,
+	"userland-proxy-path": "/usr/libexec/docker-proxy",
+	"ip": "0.0.0.0",
+	"bridge": "",
+	"icc": true,
+	"raw-logs": false,
+	"registry-mirrors": ["https://registry-mirror.mo9.com"],
+	"seccomp-profile": "",
+	"insecure-registries": [],
+	"runtimes": {
+		"cc-runtime": {
+			"path": "/usr/bin/cc-runtime"
+		},
+		"custom": {
+			"path": "/usr/local/bin/my-runc-replacement",
+			"runtimeArgs": [
+				"--debug"
+			]
+		}
+	}
+}
+
